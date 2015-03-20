@@ -1,8 +1,20 @@
 body {
-  padding: 50px;
+  padding: 80px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.login{
+	max-width:400px;
+	padding:20px;
+	margin: 0 auto;
+}
+.control-group{
+	padding:10px;
+}
+.form-login{
+
 }
