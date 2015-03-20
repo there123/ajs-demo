@@ -2,11 +2,14 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-exports.index= function(req, res) {
+router.get('/', function(req, res, next) {
+	//Response.render()表示渲染view，同时传进对应的数据
   res.render('index', { title: 'Express' });
-};
-exports.login=function(req,res){
-  res.render('login',{title:'Logging'});
-};
+});
+router.get('/login',function(req,res,next){
+	res.render('login',{title:'logging'});
+});
 
+
+module.exports=router;
 
